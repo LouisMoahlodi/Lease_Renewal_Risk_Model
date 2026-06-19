@@ -12,39 +12,6 @@ The business question is no longer only "Will the tenant renew?". The model now 
 - `python/` stores the import and reporting scripts.
 - `excel/` stores the final management report.
 
-## First-time setup on Mac
-
-From Terminal:
-
-```bash
-cd ~/Projects/Lease_Renewal_Probability_Model
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-## Step 1: Import Excel into SQLite
-
-Place `Lease_Masterfile_Risk_Model.xlsx` in the `data/` folder.
-
-Run:
-
-```bash
-python python/import_excel_to_sqlite.py
-```
-
-This creates or replaces the `tenant_risk_scorecard` table in `database/lease_renewal.db`.
-
-## Step 2: Export the upgraded management report
-
-Run:
-
-```bash
-python python/export_management_report_upgraded.py
-```
-
-This creates `excel/Tenant_Renewal_Management_Report_Upgraded.xlsx`.
-
 ## Current scorecard logic
 
 The current tenant risk score is based on:
