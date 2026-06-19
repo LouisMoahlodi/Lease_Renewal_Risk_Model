@@ -1,0 +1,32 @@
+DROP TABLE IF EXISTS tenant_risk_scorecard;
+
+CREATE TABLE tenant_risk_scorecard (
+    tenant_id TEXT PRIMARY KEY,
+    property TEXT,
+    unit_no TEXT,
+    erf_no TEXT,
+    tenant_name TEXT,
+    basic_rent REAL,
+    deposit_rent REAL,
+    deposit_utilities REAL,
+    key_deposit REAL,
+    current_lease_start_date DATE,
+    current_lease_end_date DATE,
+    notice_due_date DATE,
+    escalation_due DATE,
+    lease_type TEXT,
+    renewal_status TEXT,
+    comments TEXT,
+    initial_lease_commencement_date DATE,
+    next_escalation_rental REAL,
+    payment_score_overall REAL,
+    payment_score_basic_rental REAL,
+    payment_score_utilities REAL,
+    tenure_months INTEGER,
+    arrears_incidents_calc INTEGER,
+    lease_longevity_months INTEGER,
+    deposit_coverage_score REAL,
+    tenant_risk_score REAL,
+    tenant_grade TEXT,
+    renewal_recommendation TEXT
+);
