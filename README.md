@@ -1,6 +1,6 @@
 # Tenant Renewal Risk Scorecard Project
 
-This project converts the original Lease Renewal Probability Model into a tenant renewal risk and credit-style scorecard.
+This project converts the original Lease information into a tenant renewal risk and credit-style scorecard.
 
 The business question is no longer only "Will the tenant renew?". The model now answers: "Should management offer this tenant a renewal?"
 
